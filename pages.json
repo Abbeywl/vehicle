@@ -1,0 +1,325 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//登录页页面
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none", //关掉回弹属性
+					"contentAdjust": false //解决ios第一次打开白条
+				}
+			}
+		},
+		//首页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none", //关掉回弹属性
+					"contentAdjust": false //解决ios第一次打开白条
+				}
+			}
+		},
+		{
+			"path" : "pages/work/work",
+			"style" : {
+				"navigationBarTitleText": "工作",
+				"app-plus": {
+					"bounce": "none" ,//关掉回弹属性
+					"titleNView": {
+						// "buttons": [{
+						// o	"text": "\ue7b0",
+						// 	"fontSrc": "/static/iconfont/iconfont.ttf",
+						// 	"fontSize": "22px",
+						// 	"color":"#3096FA"
+							
+						// }],
+						// "splitLine": {
+						// 	"color": "#e8e8e8"
+						// }
+					}
+				}
+			}
+		},
+		{
+		    "path" : "pages/server/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "客服",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		//配置工作台页面
+		{
+			"path": "pages/work/platformconfig",
+			"style": {
+				"navigationBarTitleText": "配置工作台",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "保存",
+							"fontSize": "16px",
+							"color": "#3096FA"
+						}],
+						"splitLine": {
+							"color": "#e8e8e8"
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "个人",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"bounce": "none" //关掉回弹属性
+				}
+			}
+		},
+	    {
+            "path" : "pages/registered/registered",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册账户信息",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path": "pages/mine/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		},
+		//论坛
+		{
+			"path": "pages/cloudPlatfrom/index",
+			"style": {
+				"navigationBarTitleText": "得推论坛",
+				"onReachBottomDistance": 60,
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/hello",
+			"style": {
+				"navigationBarTitleText": "hello uniApp",
+				"onReachBottomDistance": 60,
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/article/index"
+		}, {
+			"path": "pages/article/list"
+		}, {
+			"path": "pages/article/show"
+		}, {
+			"path": "pages/login/index"
+		},
+		{
+			"path": "pages/login/findpwd"
+		},
+		{
+			"path": "pages/register/index"
+		}, {
+			"path": "pages/user/index"
+		},
+		{
+			"path": "pages/user/info"
+		},
+		{
+			"path": "pages/user/user_head"
+		},
+		{
+			"path": "pages/user/password"
+		},
+		{
+			"path": "pages/user/paypwd"
+		}, {
+			"path": "pages/notice/my"
+		},
+		{
+			"path": "pages/comment/my",
+			"style": {
+				"navigationBarTitleText": "我的评论",
+				"onReachBottomDistance": 60,
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/coupon/my"
+		},
+		{
+			"path": "pages/fav/my"
+		},
+		{
+			"path": "pages/recharge/my"
+		},
+		{
+			"path": "pages/recharge/index"
+		},
+		{
+			"path": "pages/recharge/order"
+		},
+		{
+			"path": "pages/pay_log/my"
+		},
+		{
+			"path": "pages/gold_log/my"
+		},
+		{
+			"path": "pages/user_address/my"
+		},
+		{
+			"path": "pages/user_address/add"
+		},
+		{
+			"path": "pages/user_address/edit"
+		},
+		// {
+		// 	"path": "pages/user_address/orderadd"
+		// },
+		{
+			"path":"pages/pm/index",  
+			"style":{
+				"navigationBarTitleText":"我的私信"
+			}
+		},
+		 {
+		 	"path":"pages/pm/detail",  
+		 	"style":{
+		 		"navigationBarTitleText":"对话"
+		 	}
+		 }, 
+		{
+			"path": "pages/user/set",
+			"style": {
+				"navigationBarTitleText": "用户设置"
+			}
+		},
+		{
+			"path": "pages/kefu/index"
+		},
+		{
+			"path": "pages/bankcard/index"
+		},
+		{
+			"path": "pages/html/aboutus"
+		}
+		
+    ],
+	"subPackages": [{
+			"root": "pageforum",
+			"pages": [{
+					"path": "forum/show",
+					"style": {
+						"navigationBarTitleText": "帖子详情",
+						"onReachBottomDistance": 60,
+						"enablePullDownRefresh": true
+					}
+				}, {
+					"path": "forum/my"
+				}, {
+					"path": "forum/add"
+				}, {
+					"path": "forum/edit"
+				}, {
+					"path": "forum/index"
+				}, {
+					"path": "forum/list"
+				},{
+					"path":"forum/myfav",
+					"style":{
+						"navigationBarTitleText":"我的收藏"
+					}
+				}, {
+					"path": "forum_group/index"
+				},{
+					"path":"forum/new",
+					"style":{
+						"navigationBarTitleText":"新贴子"
+					}
+				},{
+					"path":"forum_feeds/index",  
+					"style":{
+						"navigationBarTitleText":"关注的帖子"
+					} 
+				},
+				{
+					"path": "forum/search"
+				},{
+					"path":"forum_paihang/index",
+					"style":{
+						"navigationBarTitleText":"名人榜"
+					}
+				},{
+					"path":"forum_home/index",
+					"style":{
+						"navigationBarTitleText":"个人主页"
+					}
+				},{
+					"path":"forum/user",
+					"style":{
+						"navigationBarTitleText":"我的"
+					}
+				},{
+					"path":"forum_comment/my",
+					"style":{
+						"navigationBarTitleText":"我的评论"
+					}
+				}
+			]
+		}
+	
+	],
+	"preloadRule": {
+		"pages/cloudPlatfrom/index": {
+			"network": "all",
+			"packages": ["pageforum"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#bbbbbb",
+		"selectedColor": "#A21C50",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"iconWidth": "26px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tarbar/index.png",
+				"selectedIconPath": "static/tarbar/indexSel.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/work/work",
+				"iconPath": "static/tarbar/workbench.png",
+				"selectedIconPath": "static/tarbar/workbenchSel.png",
+				"text": "工作台"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tarbar/me.png",
+				"selectedIconPath": "static/tarbar/meSel.png",
+				"text": "个人"
+			}
+		]
+	}
+}
